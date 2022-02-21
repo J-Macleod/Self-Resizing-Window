@@ -82,5 +82,3 @@ def main():
         clock.tick(fps)
 
 main()
-    
-    
