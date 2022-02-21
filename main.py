@@ -5,8 +5,6 @@
 
 import pygame
 import os
-import time
-from random import randint
 
 global x
 global y
