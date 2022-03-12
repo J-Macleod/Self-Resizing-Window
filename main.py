@@ -30,15 +30,6 @@ pygame.display.set_caption("Self Resizing Window")
 gameDisplay = pygame.display.set_mode((display_width,display_height))
 clock = pygame.time.Clock()
 
-def screen_switch():
-    global screen_mode
-    if screen_mode == 1:
-        gameDisplay = pygame.display.set_mode((display_width,display_height), pygame.FULLSCREEN)
-        screen_mode = 2
-    elif screen_mode == 2:
-        gameDisplay = pygame.display.set_mode((display_width,display_height))
-        screen_mode = 1
-
 def change_screen(counterx, countery):
     gameDisplay = pygame.display.set_mode((display_width + counterx, display_height + countery))
 
